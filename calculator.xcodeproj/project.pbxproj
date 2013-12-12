@@ -21,6 +21,7 @@
 		087EB46818532826004C04DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087EB44A18532825004C04DA /* UIKit.framework */; };
 		087EB47018532826004C04DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 087EB46E18532826004C04DA /* InfoPlist.strings */; };
 		087EB47218532826004C04DA /* calculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 087EB47118532826004C04DA /* calculatorTests.m */; };
+		087EB47D185339F4004C04DA /* operation.m in Sources */ = {isa = PBXBuildFile; fileRef = 087EB47C185339F4004C04DA /* operation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		087EB46D18532826004C04DA /* calculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "calculatorTests-Info.plist"; sourceTree = "<group>"; };
 		087EB46F18532826004C04DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		087EB47118532826004C04DA /* calculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = calculatorTests.m; sourceTree = "<group>"; };
+		087EB47B185339F4004C04DA /* operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = operation.h; sourceTree = "<group>"; };
+		087EB47C185339F4004C04DA /* operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = operation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				087EB45818532825004C04DA /* Main.storyboard */,
 				087EB45B18532825004C04DA /* calcViewController.h */,
 				087EB45C18532825004C04DA /* calcViewController.m */,
+				087EB47B185339F4004C04DA /* operation.h */,
+				087EB47C185339F4004C04DA /* operation.m */,
 				087EB45E18532825004C04DA /* Images.xcassets */,
 				087EB44D18532825004C04DA /* Supporting Files */,
 			);
@@ -253,6 +258,7 @@
 				087EB45318532825004C04DA /* main.m in Sources */,
 				087EB45D18532825004C04DA /* calcViewController.m in Sources */,
 				087EB45718532825004C04DA /* calcAppDelegate.m in Sources */,
+				087EB47D185339F4004C04DA /* operation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

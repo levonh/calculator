@@ -1,18 +1,280 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Calc View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="calcViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5lY-Fy-l4B"/>
+                        <viewControllerLayoutGuide type="bottom" id="aTD-51-ke5"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJQ-50-Tut">
+                                <rect key="frame" x="20" y="34" width="280" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihy-Q2-Lfl">
+                                <rect key="frame" x="21" y="144" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="numberButtonSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AUP-RO-eeD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQQ-QN-u0N">
+                                <rect key="frame" x="94" y="144" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="numberButtonSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hJ9-Jp-ryU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZ3-pB-AT4">
+                                <rect key="frame" x="167" y="144" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="numberButtonSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ogi-UW-Uvr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Le-hQ-aDg">
+                                <rect key="frame" x="240" y="144" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="operationButtonSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kN8-WI-OUl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRo-wc-Fwx">
+                                <rect key="frame" x="21" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="numberButtonSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DCa-hU-h39"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCg-Ig-I6S">
+                                <rect key="frame" x="94" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="numberButtonSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mAD-Rc-URQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdU-WS-UFA">
+                                <rect key="frame" x="167" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="numberButtonSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PH3-nq-Q02"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nc1-mM-G0p">
+                                <rect key="frame" x="240" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="operationButtonSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nbF-94-7sv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0e1-F1-wgZ">
+                                <rect key="frame" x="21" y="290" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="numberButtonSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="y5L-7P-Crq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VT8-8U-xyc">
+                                <rect key="frame" x="94" y="290" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="numberButtonSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bo8-7Z-zfb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDy-r9-XXd">
+                                <rect key="frame" x="167" y="290" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="numberButtonSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gR8-Rv-jR4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2s-0Y-Pcz">
+                                <rect key="frame" x="240" y="290" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="x">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="operationButtonSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8h7-uR-NHi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REk-YC-7kv">
+                                <rect key="frame" x="21" y="363" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButtonSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1CU-lC-Htn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYU-to-46g">
+                                <rect key="frame" x="94" y="363" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="numberButtonSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ACt-fJ-ybd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdY-o5-SMD">
+                                <rect key="frame" x="167" y="363" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="operationButtonSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="f8f-Uz-C1i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1o-Q5-fLn">
+                                <rect key="frame" x="240" y="363" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="/">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="operationButtonSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8br-Pu-X4y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Y1o-Q5-fLn" secondAttribute="trailing" constant="20" id="15J-eh-JTM"/>
+                            <constraint firstItem="q2s-0Y-Pcz" firstAttribute="width" secondItem="MDy-r9-XXd" secondAttribute="width" id="1Ye-wI-m4I"/>
+                            <constraint firstAttribute="trailing" secondItem="DJQ-50-Tut" secondAttribute="trailing" constant="20" id="2Ew-1J-L3i"/>
+                            <constraint firstItem="LRo-wc-Fwx" firstAttribute="width" secondItem="pCg-Ig-I6S" secondAttribute="width" id="2WL-2w-wqu"/>
+                            <constraint firstItem="BdU-WS-UFA" firstAttribute="leading" secondItem="pCg-Ig-I6S" secondAttribute="trailing" constant="8" id="5jS-VI-hM3"/>
+                            <constraint firstAttribute="trailing" secondItem="nc1-mM-G0p" secondAttribute="trailing" constant="20" id="6Io-Dr-NPe"/>
+                            <constraint firstItem="nc1-mM-G0p" firstAttribute="width" secondItem="BdU-WS-UFA" secondAttribute="width" id="6TZ-2j-fMW"/>
+                            <constraint firstItem="ihy-Q2-Lfl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="6h4-Ab-fnO"/>
+                            <constraint firstItem="Y1o-Q5-fLn" firstAttribute="width" secondItem="MdY-o5-SMD" secondAttribute="width" id="I0O-DK-v3s"/>
+                            <constraint firstItem="VQQ-QN-u0N" firstAttribute="leading" secondItem="ihy-Q2-Lfl" secondAttribute="trailing" constant="8" id="IeR-BU-Rc4"/>
+                            <constraint firstAttribute="trailing" secondItem="6Le-hQ-aDg" secondAttribute="trailing" constant="20" id="JFY-Rd-ceW"/>
+                            <constraint firstItem="pCg-Ig-I6S" firstAttribute="width" secondItem="BdU-WS-UFA" secondAttribute="width" id="KfE-fp-xH8"/>
+                            <constraint firstItem="6Le-hQ-aDg" firstAttribute="width" secondItem="OZ3-pB-AT4" secondAttribute="width" id="NeP-m8-Xmq"/>
+                            <constraint firstItem="6Le-hQ-aDg" firstAttribute="leading" secondItem="OZ3-pB-AT4" secondAttribute="trailing" constant="4" id="OR8-kN-kIe"/>
+                            <constraint firstItem="MdY-o5-SMD" firstAttribute="leading" secondItem="kYU-to-46g" secondAttribute="trailing" constant="8" id="Pge-Xb-s3b"/>
+                            <constraint firstItem="DJQ-50-Tut" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="QdE-MX-f38"/>
+                            <constraint firstItem="0e1-F1-wgZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Tha-aN-PFG"/>
+                            <constraint firstItem="DJQ-50-Tut" firstAttribute="top" secondItem="5lY-Fy-l4B" secondAttribute="bottom" constant="33" id="UVZ-Oh-BAe"/>
+                            <constraint firstItem="VT8-8U-xyc" firstAttribute="width" secondItem="MDy-r9-XXd" secondAttribute="width" id="VSa-e6-ivZ"/>
+                            <constraint firstItem="REk-YC-7kv" firstAttribute="width" secondItem="kYU-to-46g" secondAttribute="width" id="Vv0-WO-Bh8"/>
+                            <constraint firstItem="REk-YC-7kv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="WDI-KA-Whf"/>
+                            <constraint firstItem="OZ3-pB-AT4" firstAttribute="leading" secondItem="VQQ-QN-u0N" secondAttribute="trailing" constant="8" id="YqE-Cm-ZJ0"/>
+                            <constraint firstItem="VQQ-QN-u0N" firstAttribute="width" secondItem="OZ3-pB-AT4" secondAttribute="width" id="a4e-TN-tpI"/>
+                            <constraint firstAttribute="trailing" secondItem="q2s-0Y-Pcz" secondAttribute="trailing" constant="20" id="cIO-YW-Tlk"/>
+                            <constraint firstItem="pCg-Ig-I6S" firstAttribute="leading" secondItem="LRo-wc-Fwx" secondAttribute="trailing" constant="8" id="cTW-Tm-gYC"/>
+                            <constraint firstItem="Y1o-Q5-fLn" firstAttribute="leading" secondItem="MdY-o5-SMD" secondAttribute="trailing" constant="4" id="ces-VK-Ge3"/>
+                            <constraint firstItem="LRo-wc-Fwx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="elJ-0q-X6A"/>
+                            <constraint firstItem="kYU-to-46g" firstAttribute="width" secondItem="MdY-o5-SMD" secondAttribute="width" id="lU5-jD-gyG"/>
+                            <constraint firstItem="0e1-F1-wgZ" firstAttribute="width" secondItem="VT8-8U-xyc" secondAttribute="width" id="mvG-dy-2hZ"/>
+                            <constraint firstItem="nc1-mM-G0p" firstAttribute="leading" secondItem="BdU-WS-UFA" secondAttribute="trailing" constant="4" id="mvi-oQ-Epb"/>
+                            <constraint firstItem="ihy-Q2-Lfl" firstAttribute="width" secondItem="VQQ-QN-u0N" secondAttribute="width" id="sIH-KR-Td5"/>
+                            <constraint firstItem="VT8-8U-xyc" firstAttribute="leading" secondItem="0e1-F1-wgZ" secondAttribute="trailing" constant="8" id="skt-Va-gDg"/>
+                            <constraint firstItem="MDy-r9-XXd" firstAttribute="leading" secondItem="VT8-8U-xyc" secondAttribute="trailing" constant="8" id="uyG-AZ-HmX"/>
+                            <constraint firstItem="kYU-to-46g" firstAttribute="leading" secondItem="REk-YC-7kv" secondAttribute="trailing" constant="8" id="wcN-h3-RYj"/>
+                            <constraint firstItem="q2s-0Y-Pcz" firstAttribute="leading" secondItem="MDy-r9-XXd" secondAttribute="trailing" constant="4" id="xV4-h8-qdm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelResult" destination="DJQ-50-Tut" id="ubr-lA-H0a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
